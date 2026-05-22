@@ -1,0 +1,9 @@
+ol {
+	list-style-type: upper-roman;
+	box-shadow: -1px 4px 2px grey;
+}
+
+ul {
+	list-style-type: circle;
+	box-shadow: -1px 4px 2px grey;
+}

@@ -1,0 +1,13 @@
+.headingStyle {
+	color: DimGrey;
+	text-align: center;
+	font-size: x-large;
+}
+
+.myStyle {
+	color: DarkGrey;
+	text-align: center;
+	font-size: medium;
+	font-weight: 550;
+	font-family: "Malgun Gothic", sans-serif;
+}
