@@ -1,95 +1,130 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Pet Shop</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <!--NAVBAR-->
-        <nav>
-            <ul>
-                <li><a href = "index.html">HOME</a></li>
-                <li><a href = "contact.html">CONTACT</a></li>
-            </ul>
-            <ul>
-                <a href = "#cat"><li>Cats & Kittens</li></a>
-                <a href = "#dog"><li>Dogs & Puppies</li></a>
-                <a href = "#rabbit"><li>Rabbits</li></a>
-                <a href = "#guineaPig"><li>Guinea Pigs</li></a>
-                <a href = "#fish"><li>Fish</li></a>
-                <a href = "#reptile"><li>Reptiles</li></a>
-                <a href = "#video"><li>Videos</li></a>
-            </ul>
-        </nav>
-        <!--HEADER-->
-        <header>
+
+<head>
+    <title>The Pet Shop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
+        <ul id="nav-border">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <ul>
+            <a href="#cat">
+                <li>Cats & Kittens</li>
+            </a>
+            <a href="#dog">
+                <li>Dogs & Puppies</li>
+            </a>
+            <a href="#rabbit">
+                <li>Rabbits</li>
+            </a>
+            <a href="#guineaPig">
+                <li>Guinea Pigs</li>
+            </a>
+            <a href="#fish">
+                <li>Fish</li>
+            </a>
+            <a href="#reptile">
+                <li>Reptiles</li>
+            </a>
+            <a href="#video">
+                <li>Videos</li>
+            </a>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1 class="animate-text">Welcome to The Pet Shop!</h1>
+        </div>
+    </header>
+    <!--PET IMAGES-->
+    <section>
+        <div class="container">
+            <h2>Choose a Pet!</h2>
             <div>
-                <h1>Welcome to The Pet Shop!</h1>
-            </div>
-        </header>
-        <!--PET IMAGES-->
-        <section>
-            <div>
-                <h2>Choose a Pet!</h2>
-                <div>
-                    <!--CAT IMAGE-->
-                    <div id = "cat">
+                <!--CAT IMAGE-->
+                <div id="cat" class="column">
+                    <div class="image-container">
                         <h3>Cats & Kittens</h3>
-                        <img src = "images/cat.png" alt = "Picture of kittens">
+                        <img src="images/cat.png" alt="Picture of kittens">
+                        <div class="overlay"></div>
                     </div>
-                    <!--DOG IMAGE-->
-                    <div id = "dog">
+                </div>
+                <!--DOG IMAGE-->
+                <div id="dog" class="column">
+                    <div class="image-container">
                         <h3>Dogs & Puppies</h3>
-                        <img src = "images/dog.png" alt = "Picture of dogs">
+                        <img src="images/dog.png" alt="Picture of dogs">
+                        <div class="overlay"></div>
                     </div>
-                    <!--RABBIT IMAGE-->
-                    <div id = "rabbit">
+                </div>
+                <!--RABBIT IMAGE-->
+                <div id="rabbit" class="column">
+                    <div class="image-container">
                         <h3>Rabbits</h3>
-                        <img src = "images/rabbits.png" alt = "Picture of rabbits">
+                        <img src="images/rabbits.png" alt="Picture of rabbits">
+                        <div class="overlay"></div>
                     </div>
-                    <!--GUINEA PIG IMAGE-->
-                    <div id = "guineaPig">
+                </div>
+                <!--GUINEA PIG IMAGE-->
+                <div id="guineaPig" class="column">
+                    <div class="image-container">
                         <h3>Guinea Pigs</h3>
-                        <img src = "images/guineapigs.png" alt = "Picture of guinea pigs">
+                        <img src="images/guineapigs.png" alt="Picture of guinea pigs">
+                        <div class="overlay"></div>
                     </div>
-                    <!--FISH IMAGE-->
-                    <div id = "fish">
+                </div>
+                <!--FISH IMAGE-->
+                <div id="fish" class="column">
+                    <div class="image-container">
                         <h3>Fish</h3>
-                        <img src = "images/fish.png" alt = "Picture of goldfish">
+                        <img src="images/fish.png" alt="Picture of goldfish">
+                        <div class="overlay"></div>
                     </div>
-                    <!--REPTILE IMAGE-->
-                    <div id = "reptile">
+                </div>
+                <!--REPTILE IMAGE-->
+                <div id="reptile" class="column">
+                    <div class="image-container">
                         <h3>Reptile</h3>
-                        <img src = "images/beardedDragon.png" alt = "Picture of bearded dragon">
+                        <img src="images/beardedDragon.png" alt="Picture of bearded dragon">
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--VIDEOS-->
-        <section>
-            <!--DOG VIDEO-->
-            <div id = "video">
-                <h3>Videos</h3>
-                <iframe width = "1280" height = "720" src = "https://www.youtube.com/embed/ng58pNPDDW4">
-            </div>
-        </section>
-        <!--FOOTER-->
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>The Pet Shop!&copy;</p>
+        </div>
+    </section>
+    <!--VIDEOS-->
+    <section>
+        <!--DOG VIDEO-->
+        <div id="video" class="container">
+            <h3>Videos</h3>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4?si=AD7VDL5WGpD40UQ7">
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>The Pet Shop!&copy;</p>
+                </td>
+                <td>
+                    <p>123 Square Ave</p>
+                    <p>Portland, OR 97204</p>
+                </td>
+                <td>
+                    <p>503-234-3966</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
 
-                    </td>
-                    <td>
-                        <p>123 Square Ave</p>
-                        <p>Portland, OR 97204</p>
-                    </td>
-                    <td>
-                        <p>503-234-3966</p>
-                    </td>
-                </tr>
-            </table>
-        </footer>
-    </body>
 </html>

@@ -1,0 +1,232 @@
+/*import link for Roboto font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+/*import link for Mukta font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body{
+    background-color: white;
+    overflow-x: hidden; /*hides the bottom left to right scroll bar when elements stretch past the screen bounds*/
+}
+
+/*NAVBAR*/
+
+li{
+    display: inline;
+    padding: 5px;
+}
+
+a{
+    font-family: 'Roboto', sans-serif; /*font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px .5px 4px rgba(46, 31, 31, 0.5);
+    color: white;
+    text-decoration: none; /*removes the default link styling*/
+}
+
+a:hover{
+    color: #d7eaf7; /*changes the color of the anchor element when the user hovers their mouth over it*/
+}
+
+.nav-bar{
+    background-color: #216391;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*the follow minus margins stretch the navbar background past the web browser screens edge*/
+    margin-top: -8px;
+    margin-right: -10px;
+    margin-left: -10px;
+    position: sticky; /*creates a sticky element that stays in the same spot on the browser screen*/
+    top: 0; /*tells the browser to keep the element at the top of the page based on user scrolling*/
+    z-index: 9; /*sets the stack layer to allow the navbar to scroll over all elements*/
+}
+
+/*creates a line underneath the HOME and CONTACT links to separate them from the image links*/
+#nav-border{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
+}
+
+/*HEADERS*/
+
+h1, h2, h3{
+    color: #0a3f63;
+    text-align: center;
+    font-family: "Mukta", sans-serif; /*font from fonts.google.com*/
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#contact-h3{
+    text-shadow: none;
+}
+
+/*creates a text color change animation on the h1 tags for the home and contact page headers*/
+@keyframes color-text{
+    0%{color: #b5e1ff;}
+    100%{color: #0a3f63;}
+}
+
+/*calls the animation by it's name in a css selector so that it can be applied to a specific html element*/
+.animate-text{
+    animation: color-text 4s;
+}
+
+/*BODY CONTENT*/
+
+img{
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 19);
+}
+
+.column{
+    float: left;
+    width: 48%; /*places the images side by side when the float property is used*/
+    padding: 10px;
+}
+
+/*groups elements inside of a div element together and forces any floating elements outside of the div under it with this class selector*/
+.container{
+    background-size: 100% !important;
+    margin: 0px -60px 50px -40px;
+    padding-top: 5px; /*padding will add an inline space so that the elements do not sit at the edge of the div*/
+    padding-bottom: 10px;
+}
+
+/*this is apart of the .container class selector to format the elements to display in a table like format*/
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*sets up the size of each div that holds an image so that the image can be centered*/
+.image-container{
+    position: relative;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/*sets the background color in each div with an image and specifies which ones with the use of the id names of each image*/
+#cat{
+    background-color: #d7eaf7;
+}
+
+#dog{
+    background-color: #c3e0c5;
+}
+
+#rabbit{
+    background-color: #c3e0c5;
+}
+
+#guineaPig{
+    background-color: #d7eaf7;
+}
+
+#fish{
+    background-color: #d7eaf7;
+}
+
+#reptile{
+    background-color: #c3e0c5;
+}
+
+/*sets up the properties for the overlay on each image*/
+.overlay{
+    position:  absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+/*the :hover pseudo-class triggers to set the overlay class to 60% opacity when a user hovers their mouse over the image*/
+.overlay:hover{
+    opacity: 0.6;
+}
+
+/*this selector targets the video element on the page*/
+iframe{
+    display: table;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+}
+
+/*styles the div element that holds the video*/
+#video{
+    background-color: #c3e0c5;
+    padding-top: 5px; /*padding will add an inline space so elements don't sit on the edge of the div*/
+    padding-bottom: 50px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #216391;
+    margin-top: 50px;
+    /*negative margins stretch the footer background beyond the web browser screen edge on the left and right*/
+    margin-right: -10px;
+    margin-left: -10px;
+    bottom: 0; /*postions the footer on the bottom of the screen*/
+}
+
+/*styles the table element within the footer tag*/
+table{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    width: 33%; /*we devide the three columns evenly so that each column takes up 1/3 of the browser width*/
+}
+
+/*specifically styles the paragraph elements within the table data elements*/
+td p{
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/*FORM CSS*/
+
+form{
+    padding: 15px;
+    display: table;
+    margin: auto;
+}
+
+input{
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 10px 15px 10px 0px;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+}
