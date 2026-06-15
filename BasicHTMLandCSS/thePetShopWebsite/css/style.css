@@ -229,4 +229,65 @@ input{
     margin: 10px 15px 10px 0px;
     font-size: 20px;
     color: rgb(165, 165, 165);
+    transition: color 0.3s ease-out;
+}
+
+/*the :focus pseudo-class is triggered when the user clicks on an input element*/
+input:focus{
+    box-sizing: border-box;
+    border: 2px solid #0a3f63;
+    color: #000000;
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+/*styles the lable tag on the contact form*/
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*the type selector for the textarea element for a user to write a message*/
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgb(165, 165, 165);
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+    resize: both;
+    transition: color 0.3s ease-out;
+}
+
+/*applies different styling to the text area when users trigger the :focus pseudo-class be clicking on it*/
+textarea:focus{
+    box-sizing: border-box;
+    color: black;
+    border: 3px solid #0a3f63;
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+/*styles the submit button*/
+input[type="submit"]{
+    background-color: #0a3f63;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+}
+
+/*changes the background color of the submit button when a user hovers over it*/
+input[type="submit"]:hover{
+    background-color: #052133
 }
