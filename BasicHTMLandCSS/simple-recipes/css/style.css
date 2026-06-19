@@ -1,0 +1,41 @@
+/*import link for the 'josafin slab' font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap');
+
+html{
+    overflow-x: hidden; /*prevents the browser from displaying a left to right sroll bar as a result of negative margin values*/
+}
+
+/*NAVBAR*/
+.nav-bar{
+    position: sticky; /*creates a sticky element that stays in the same spot in the browser screen*/
+    top: 0; /*tells the browser to stick the element at the top of the page based on user scrolling*/
+    z-index: 9; /*sets the stack layer of the navbar to scroll over all elements*/
+}
+
+ul{
+    display: flex; /*creates a flex container which will expand or shrink the elements to fill the space avaiable to them and place them side by side horizontally*/
+    list-style-type: none; /*removes the default styling for unordered list elements*/
+    align-items: center;
+    margin: -8px -8px 0px -8px; /*the margin order is tope right bottom and left. the negative margins will stretch the background beyond the edge of the browser screen*/
+    background-color: rgb(1, 128, 106);
+    border-bottom: 5px solid rgb(247, 117, 188);
+}
+
+a{
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(247, 117, 188);
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+a:hover{
+    background-color: rgb(149, 238, 223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in;
+}
