@@ -3,6 +3,7 @@
 
 html{
     overflow-x: hidden; /*prevents the browser from displaying a left to right sroll bar as a result of negative margin values*/
+    scroll-behavior: smooth; /*creates a smooth scrolling effect when a bookmark link is clicked*/
 }
 
 /*NAVBAR*/
@@ -22,6 +23,7 @@ ul{
 }
 
 a{
+    display: block; /*displays anchor elements vertically on a new line, this was added so the drop down menu displays vertically and not horizontally on the screen*/
     font-family: "Josefin Slab", serif;
     font-size: 25px;
     font-weight: 800;
@@ -33,9 +35,60 @@ a{
     transition: background-color 0.3s ease-in;
 }
 
-a:hover{
+a:hover, .drop:hover a:only-of-type /*only-of-type effects the only child element nested within an element. this will keep the background color blue while hovering and the text white when we move the mouse over anchor elements in the rollover-menu div*/{
     background-color: rgb(149, 238, 223);
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
     transition: background-color 0.3s ease-in;
+}
+
+.rollover-menu{
+    display: none; /*prevents the anchor links in ths div from showing on the web browser until othersise specified*/
+    position: absolute; /*absolute will position the div element relative to the position of its parent element*/
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*cerates a trigger effect when the user hovers their mouse over the recipes link. the trigger will display all elements within the rollover-menu class div element*/
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+.rollover-menu a{
+    color: rgb(0, 80, 67);
+}
+
+.rollover-menu a:hover{
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
+}
+
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid rgb(238, 118, 136);
+}
+
+/*FOOTER*/
+
+footer{
+    align-items: center; /*will align nested html elements in the center i.e. the table data and paragraph elements in the footer tag*/
+    margin: 0px -8px -8px -8px; /*stretches the footer background beyond the browsers edge leaving no white space*/
+    background-color: rgb(1, 128, 106);
+    border-top: 5px solid rgb(247, 117, 188);
+    bottom: 0; /*positions the footer at the bottom of the screen*/
+}
+
+table{
+    width: 100%; /*will take up the full width of the browser screen*/
+}
+
+td{
+    width: 33%; /*each table data item takes up 1/3 of the space available on the screen*/
+}
+
+td p{
+    font-family: "Josefin Slab", serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247, 117, 188);
 }
