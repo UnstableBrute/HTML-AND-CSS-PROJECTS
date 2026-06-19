@@ -1,6 +1,9 @@
 /*import link for the 'josafin slab' font from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap');
 
+/*import link for the 'sacramento' font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 html{
     overflow-x: hidden; /*prevents the browser from displaying a left to right sroll bar as a result of negative margin values*/
     scroll-behavior: smooth; /*creates a smooth scrolling effect when a bookmark link is clicked*/
@@ -24,7 +27,7 @@ ul{
 
 a{
     display: block; /*displays anchor elements vertically on a new line, this was added so the drop down menu displays vertically and not horizontally on the screen*/
-    font-family: "Josefin Slab", serif;
+    font-family: "Josefin Slab", serif; /*font from fonts.google.com*/
     font-size: 25px;
     font-weight: 800;
     color: rgb(247, 117, 188);
@@ -86,9 +89,75 @@ td{
 }
 
 td p{
-    font-family: "Josefin Slab", serif;
+    font-family: "Josefin Slab", serif; /*font from fonts.google.com*/
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     color: rgb(247, 117, 188);
+}
+
+/*BODY*/
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+/*HEADERS*/
+
+h1{
+    font-family: "Sacramento", cursive; /*font from fonts.google.com*/
+    font-size: 80px;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+h2, h3, h4{
+    font-family: "Josefin Slab", serif; /*font from fonts.google.com*/
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 117, 188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*PARAGRAPHS*/
+
+p{
+    font-family: "Josefin Slab", serif; /*font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+/*IMAGES*/
+
+/*positions elements to sit side by side on the screen*/
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+/*specifically styles the first 7 img tag elements contained in elements with the .column class*/
+.column img:nth-child(-n + 7){
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
