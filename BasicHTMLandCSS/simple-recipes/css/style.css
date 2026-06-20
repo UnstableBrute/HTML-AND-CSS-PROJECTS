@@ -410,3 +410,12 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: rgb(247, 117, 188);
 }
+
+/*ABOUT*/
+
+@media screen and (min-width: 1200px){
+    #about p{
+        margin-left: 25px;
+        margin-right: 40px;
+    }
+}
