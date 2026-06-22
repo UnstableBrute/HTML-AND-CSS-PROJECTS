@@ -20,7 +20,7 @@ ul{
     display: flex; /*creates a flex container which will expand or shrink the elements to fill the space avaiable to them and place them side by side horizontally*/
     list-style-type: none; /*removes the default styling for unordered list elements*/
     align-items: center;
-    margin: -8px -8px 0px -8px; /*the margin order is tope right bottom and left. the negative margins will stretch the background beyond the edge of the browser screen*/
+    margin: -8px -8px 0px -8px; /*the margin order is top right bottom and left. the negative margins will stretch the background beyond the edge of the browser screen*/
     background-color: rgb(1, 128, 106);
     border-bottom: 5px solid rgb(247, 117, 188);
 }
@@ -52,7 +52,7 @@ a:hover, .drop:hover a:only-of-type /*only-of-type effects the only child elemen
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-/*cerates a trigger effect when the user hovers their mouse over the recipes link. the trigger will display all elements within the rollover-menu class div element*/
+/*creates a trigger effect when the user hovers their mouse over the recipes link. the trigger will display all elements within the rollover-menu class div element*/
 .drop:hover .rollover-menu{
     display: block;
 }
