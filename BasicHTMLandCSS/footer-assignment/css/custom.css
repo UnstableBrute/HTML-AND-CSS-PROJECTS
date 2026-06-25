@@ -1,0 +1,39 @@
+/*font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive&display=swap');
+
+:root{
+    --main-font-family:"Edu NSW ACT Cursive", cursive;
+    --secondary-font-family: 'Courier New', Courier, monospace;
+}
+
+/*GENERAL STYLING*/
+
+h1{
+    font-family: var(--main-font-family);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*FOOTER*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    opacity: 0.8;
+}
+
+.footer-text{
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-img{
+    border: 3px solid greenyellow;
+    border-radius: 10px;
+    height: 50px;
+    width: auto;
+}
